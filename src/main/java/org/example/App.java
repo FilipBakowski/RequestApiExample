@@ -5,10 +5,6 @@ import org.example.Requests.BooksRequest;
 
 import java.util.List;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
