@@ -1,22 +1,5 @@
 package org.example.Data;
 
-/*
-        "kind": "Epika",
-        "full_sort_key": "verne jules gabriel$20 000 mil podmorskiej z~1eglugi$2848",
-        "title": "20 000 mil podmorskiej żeglugi",
-        "url": "https://wolnelektury.pl/katalog/lektura/20-000-mil-podmorskiej-zeglugi/",
-        "cover_color": "#961060",
-        "author": "Jules Gabriel Verne",
-        "cover": "book/cover/20-000-mil-podmorskiej-zeglugi.jpg",
-        "epoch": "Pozytywizm",
-        "href": "https://wolnelektury.pl/api/books/20-000-mil-podmorskiej-zeglugi/",
-        "has_audio": true,
-        "genre": "Powieść",
-        "simple_thumb": "https://wolnelektury.pl/media/book/cover_api_thumb/20-000-mil-podmorskiej-zeglugi_vTapBJg.jpg",
-        "slug": "20-000-mil-podmorskiej-zeglugi",
-        "cover_thumb": "book/cover_thumb/20-000-mil-podmorskiej-zeglugi_7sGyWnK.jpg",
-        "liked": null
- */
 public class Book {
     private String kind;
     private String fullSortKey;
@@ -27,7 +10,7 @@ public class Book {
     private String cover;
     private String epoch;
     private String href;
-    private String has_audio;
+    private boolean has_audio;
     private String genre;
     private String simple_thumb;
     private String slug;
@@ -105,11 +88,11 @@ public class Book {
         this.href = href;
     }
 
-    public String getHas_audio() {
+    public boolean getHas_audio() {
         return has_audio;
     }
 
-    public void setHas_audio(String has_audio) {
+    public void setHas_audio(boolean has_audio) {
         this.has_audio = has_audio;
     }
 
